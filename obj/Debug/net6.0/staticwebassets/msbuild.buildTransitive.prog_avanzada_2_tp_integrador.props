@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\prog_avanzada_2_tp_integrador.props" />
+</Project>
