@@ -1,0 +1,72 @@
+﻿@model prog_avanzada_2_tp_integrador.Models.ViewModels.CarView
+
+@{
+    ViewData["Title"] = "Auto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.car.Id == null)
+{
+      <h1>Agregar Auto</h1>
+}
+else  {
+    <h1>Editar Auto</h1>
+ }
+  
+  <div class="row">
+    <div class="col-sm-4">
+
+        <form asp-action="CreateOrUpdate" asp-controller="Home" method="post">
+            <input type="hidden" asp-for="car.Id" />
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="car.IdCarBrand">Marca</label>
+                <select class="form-select form-select-sm" asp-for="car.IdCarBrand" asp-items="@Model.brands" required>
+                    <option selected disabled>-- Seleccionar Marca --</option>
+                </select>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" asp-for="car.Model">Modelo</label>
+                <input class="form-control form-control-sm" asp-for="car.Model" type="text" required />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="car.Color">Color</label>
+                <input class="form-control form-control-sm" asp-for="car.Color" type="text" required />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="car.Year">Año</label>
+                <input class="form-control form-control-sm" asp-for="car.Year" type="text" required />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="car.Transmission">Transmision</label>
+                <input class="form-control form-control-sm" asp-for="car.Transmission" type="text" required />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="car.Engine">Motor</label>
+                <input class="form-control form-control-sm" asp-for="car.Engine" type="text" required />
+            </div>
+
+
+            <div class="mb-2">
+                
+                @if (Model.car.Id == null)
+                {
+                    <button class="btn btn-primary btn-sm w-25" type="submit">Crear</button>
+                }
+                else
+                {
+                     <button class="btn btn-primary btn-sm w-25" type="submit">Actualizar</button>
+
+                }
+                 <a class="btn btn-dark btn-sm" asp-action="Index" asp-controller="Home">Volver</a>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
