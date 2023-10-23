@@ -1,0 +1,123 @@
+/*
+GET http://localhost:5184/
+GET / HTTP/1.1
+User-Agent: PostmanRuntime/7.33.0
+Accept: *
+Cache-Control: no-cache
+Postman-Token: 899e70e9-99f9-4cb9-b85c-fd3c60060ed0
+Host: localhost:5184
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+ 
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Tue, 03 Oct 2023 20:32:16 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PAII - Grupo 5 - prog_avanzada_2_tp_integrador</title>
+<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c" />
+<link rel="stylesheet" href="/prog_avanzada_2_tp_integrador.styles.css?v=bE7JWPERTlkQgD1oDDUIgpLVJoAMlZhwFEieKOFMmN0" />
+</head>
+<body>
+<header>
+<nav b-kq5s2n9ktn class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<div b-kq5s2n9ktn class="container-fluid">
+<a class="navbar-brand" href="/">prog_avanzada_2_tp_integrador</a>
+<button b-kq5s2n9ktn class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+aria-expanded="false" aria-label="Toggle navigation">
+<span b-kq5s2n9ktn class="navbar-toggler-icon"></span>
+</button>
+<div b-kq5s2n9ktn class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+<ul b-kq5s2n9ktn class="navbar-nav flex-grow-1">
+<li b-kq5s2n9ktn class="nav-item">
+<a class="nav-link text-dark" href="/">Home</a>
+</li>
+<li b-kq5s2n9ktn class="nav-item">
+<a class="nav-link text-dark" href="/Home/CreateAndEdit">Crear</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<div b-kq5s2n9ktn class="container">
+<main b-kq5s2n9ktn role="main" class="pb-3">
+<div class="text-center">
+<div"card-header">
+<h5>Listado de autos que se encuentra actualmente en stock</h5>
+</div>
+<div class="card-body">
+<a class="btn btn-success btn-sm" href="/Home/CreateAndEdit">Crear Nueva Entrada</a>
+<hr />
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Marca</th>
+<th>Modelo</th>
+<th>Año</th>
+<th>Color</th>
+<th>Transmision</th>
+<th>Motor</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chevrolet</td>
+<td>Cruze</td>
+<td>2020</td>
+<td>Rojo</td>
+<td>Automatica</td>
+<td>V4</td>
+<td>
+<a class="btn btn-primary btn-sm " href="/Home/CreateAndEdit?carId=651b4c55557e5adfdc1fe4b0"> Editar</a>
+<a class="btn btn-danger btn-sm " href="/Home/Delete?carId=651b4c55557e5adfdc1fe4b0"> Eliminar</a>
+</td>
+</tr>
+<tr>
+<td>Renault</td>
+<td>Duster dynamic</td>
+<td>2012</td>
+<td>Blanco</td>
+<td>manual </td>
+<td>V2.0</td>
+<td>
+<a class="btn btn-primary btn-sm " href="/Home/CreateAndEdit?carId=651c4e2eb936a0ebdd17859d"> Editar</a>
+<a class="btn btn-danger btn-sm " href="/Home/Delete?carId=651c4e2eb936a0ebdd17859d"> Eliminar</a>
+</td>
+</tr>
+<tr>
+<td>Toyota</td>
+<td>Etios</td>
+<td>2023</td>
+<td>Azul</td>
+<td>Automatica</td>
+<td>V1.8</td>
+<td>
+<a class="btn btn-primary btn-sm " href="/Home/CreateAndEdit?carId=651c5506b936a0ebdd17859e"> Editar</a>
+<a class="btn btn-danger btn-sm " href="/Home/Delete?carId=651c5506b936a0ebdd17859e"> Eliminar</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+<footer b-kq5s2n9ktn class="border-top footer text-muted">
+<div b-kq5s2n9ktn class="container">
+&copy; 2023 - prog_avanzada_2_tp_integrador - <a href="/Home/Privacy">Privacy</a>
+</div>
+</footer>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+</body>
+</html> */
