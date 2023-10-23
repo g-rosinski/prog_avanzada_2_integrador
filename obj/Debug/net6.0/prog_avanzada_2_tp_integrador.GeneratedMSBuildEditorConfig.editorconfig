@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Gonzalo\source\repos\programacion_avanzada_2\prog_avanzada_2_tp_integrador
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Gonzalo/source/repos/programacion_avanzada_2/prog_avanzada_2_tp_integrador/Views/CarBrand/CreateAndEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQnJhbmRcQ3JlYXRlQW5kRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gonzalo/source/repos/programacion_avanzada_2/prog_avanzada_2_tp_integrador/Views/CarBrand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQnJhbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gonzalo/source/repos/programacion_avanzada_2/prog_avanzada_2_tp_integrador/Views/Home/CreateAndEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVBbmRFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,41 @@
+﻿@model prog_avanzada_2_tp_integrador.Models.ViewModels.CarBrandListView
+@{
+    ViewData["Title"] = "PAII - Grupo 5";
+}
+
+<div class="text-center">
+    <div"card-header">
+        <h5>Listado de marca de autos</h5>
+    </div>
+    <div class="card-body">
+    <a class="btn btn-success btn-sm" asp-action="CreateAndEdit" asp-controller="CarBrand" asp-route-carBrandId="">Crear Marca</a>
+        <hr />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Marca</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.brands)
+                {
+                    @if (item != null)
+                    {
+                        
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>
+                            <a class="btn btn-primary btn-sm " asp-action="CreateAndEdit" asp-controller="CarBrand" asp-route-carBrandId=@item.Id.ToString()> Editar</a>
+                            <a class="btn btn-danger btn-sm " asp-action="Delete" asp-controller="CarBrand" asp-route-carBrandId="@item.Id.ToString()"> Eliminar</a>
+                            </td>
+                        </tr>
+
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
